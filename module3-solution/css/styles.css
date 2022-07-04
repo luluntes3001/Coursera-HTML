@@ -12,6 +12,10 @@ body {
   border: 0;
   padding-bottom: 15px;
 }
+.container {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 .navbar-brand {
   padding-top: 25px;
@@ -53,12 +57,17 @@ body {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+  #main-content {
+    width: auto;
+  }
 }
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) 
-
+@media (min-width: 992px) and (max-width: 1199px) {
+  #main-content {
+    width: auto;
+}
+}
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
@@ -100,4 +109,5 @@ body {
 #contentos p {
   color: #000000;
 }
+
 
