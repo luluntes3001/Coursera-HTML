@@ -141,5 +141,157 @@
 // console.log("after changeObject, orig value:");
 // console.log(value);
 
-////Aula 48////
+////Interlúdio videos do MOSH////
 
+// let name = "Luiz";
+// console.log(name);
+
+// let person = {
+//     name: 'Mosh',
+//     age: 30
+// };
+// person.name = 'John'
+// let selection= 'name';
+// person[selection] = 'Mary'; //selection vira name que tb é uma propriedade que foi feita anteriormente
+// console.log(person.name);
+
+//////////////////array//
+
+// let selectedColors = ['red', 'blue'];  ///lembrar que eles ficam na ordem 0,1,2,3.
+
+// console.log(selectedColors[0]); //estou selecionando o red
+
+// selectedColors[2] = 'green'; //como o primeiro array ia até um, estou colocando um item dois
+
+// console.log(selectedColors[2]);
+
+// selectedColors[3] = 1;  ///como a linguagem é dinâmica dá para juntar tudo
+// console.log(selectedColors[3]);
+
+////////////////////Funções/////
+
+// function greet(name) {    //////name é um parametro e pode exister vários parametros 
+//     console.log('Hello ' + name);
+// }
+// greet('John');  /////john é um argumento 
+
+//função de cálculo//
+
+// function square(number) {
+//     return number * number;
+// }
+
+// let result = square(2);
+// console.log(result);
+
+
+///Object oriented programming//
+
+// let employee = {  ///exemplo de objeto reduzido
+//     baseSalary: 30_000,
+//     overtime: 10,
+//     rate: 20,
+//     getWage: function() {
+//         return this.baseSalary + (this.overtime * this.rate);
+//     }
+// };
+
+// console.log(employee.getWage());
+
+
+/////function factory
+
+// function createCricle(radius) {
+//     return {
+//         radius,
+//         draw: function() {
+//             console.log('draw');
+//         }
+//     };
+// }
+// const circle = createCricle(1);
+// console.log(circle)
+
+
+//Contructor function
+
+// function Circle(radius) {
+//     this.radius = radius;
+//     this.draw = function() {
+//         console.log('draw');
+//     }
+// }
+
+// const another = new Circle(1) //se usar this, tem que usar o new
+
+
+
+///////AULA 48/////////
+
+//fazer o this apontar para dentro//
+
+// function Circle (radius) {
+//     console.log(this);
+// }
+
+// var myCircle = new Circle(10);  //equivalente a new object ()
+// console.log(myCircle);
+
+// function Circle (radius) {
+//     this.radius = radius;
+
+//     this.getArea = 
+//         function () {
+//             return Math.PI * Math.pow(this.radius, 2);
+//         };
+// }
+
+// var MyCircle = new Circle(10);  ///quando se cria um novo as linhjas 243 a 246 são criadas sempre
+// console.log(MyCircle.getArea());
+
+////////colocando o prototype/////
+
+// function Circle (radius) {
+//     this.radius = radius;
+// }
+  
+// Circle.prototype.getArea = 
+//     function () {
+//     return Math.PI * Math.pow(this.radius, 2);
+//     };
+  
+  
+// var myCircle = new Circle(10);
+// console.log(myCircle.getArea());
+  
+// var myOtherCircle = new Circle(20);
+// console.log(myOtherCircle.getArea());
+
+
+///////AULA 50/////
+
+// var array = new Array();  ////colocando vários objetos em uma array
+// array[0] = "Luiz";
+// array[1] = 2;
+// array[2] = function (name) {
+//     console.log("Hello " + name);
+// };
+
+// array[3] = {couse: "Html"};
+// console.log(array);
+// array[2](array[0]);
+
+
+// var names = ["Luiz", "Carol", "Sushi"];
+// // console.log(names);
+
+// for (var i = 0; i< names.length; i++) {
+//     console.log("Hello " + names[i])
+// }
+
+var names2 = ["Luiz", "Carol", "Sushi"];
+
+names2.greeting = "Hi!"; //como é uma propriedade eu posso adicionar mais e eles vão se tornando o proximo na array, neste caso o 3
+for (var name in names2) {
+    console.log("Hello " + names2[name]);
+}
