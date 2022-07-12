@@ -100,14 +100,14 @@
 // console.log("a: " + a);
 // console.log("b: " + b);
 
-// var a = {x: 7};
-// var b = a;
-// console.log(a);
-// console.log(b);
-// b.x = 5;
-// console.log(a.x)
-// console.log(a);
-// console.log(b);
+var a = {x: 7};
+var b = a;
+console.log(a);
+console.log(b);
+b.x = 5;
+console.log(a.x)
+console.log(a);
+console.log(b);
 
 ////value
 // function changePrimitive(primValue) {
@@ -289,9 +289,14 @@
 //     console.log("Hello " + names[i])
 // }
 
-var names2 = ["Luiz", "Carol", "Sushi"];
+// var names2 = ["Luiz", "Carol", "Sushi"];
 
-names2.greeting = "Hi!"; //como é uma propriedade eu posso adicionar mais e eles vão se tornando o proximo na array, neste caso o 3
-for (var name in names2) {
-    console.log("Hello " + names2[name]);
-}
+// names2.greeting = "Hi!"; //como é uma propriedade eu posso adicionar mais e eles vão se tornando o proximo na array, neste caso o 3
+// for (var name in names2) {
+//     console.log("Hello " + names2[name]);
+// }
+
+
+///////Aula 51/////////
+
+
