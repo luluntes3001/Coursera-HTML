@@ -28,4 +28,4 @@ e, em seguida, envie Hello 'Name' ou Good Bye 'Name' para o console. O programa 
 
 Descrição: Webpage de um restaurante com tile clicável que possuiu comportamento aleatório (utilizando AJAX).
 
-**Requisitos da atividade:**Alterar o comportamento de modo que, quando o usuário clicar em 'Specials', o aplicativo da Web leve o usuário a uma página de menu de categoria única aleatória, listando itens de menu na categoria, seja 'Lunch', 'Dinner', 'Sushi', etc. . Dessa forma, qualquer categoria aleatória pode se tornar os Specials![Acesso.](https://luluntes3001.github.io/Coursera-HTML/module5-solution/).
+**Requisitos da atividade:** Alterar o comportamento de modo que, quando o usuário clicar em 'Specials', o aplicativo da Web leve o usuário a uma página de menu de categoria única aleatória, listando itens de menu na categoria, seja 'Lunch', 'Dinner', 'Sushi', etc. . Dessa forma, qualquer categoria aleatória pode se tornar os Specials.[Acesso.](https://luluntes3001.github.io/Coursera-HTML/module5-solution/)
